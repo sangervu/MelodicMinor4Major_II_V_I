@@ -43,7 +43,7 @@ public class II_Dorianb2 {
 
         }
 
-// Find the new root for melodic minor scale used on for Dorianb2 scale       
+        // Find the new root for melodic minor scale used on for Dorianb2 scale       
         // Same root note
         if (sharpKeys.contains(keyNote)
                 || keyNote.contains("C#") || keyNote.contains("F#") || keyNote.contains("G#")) {

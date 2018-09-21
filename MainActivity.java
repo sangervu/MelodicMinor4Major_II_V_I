@@ -24,13 +24,13 @@ public class MainActivity {
                 switch (valinta) {
 
                     case 1:
-
-                        LydianAug lydianAug = new LydianAug(keyNote);
+                        I_LydianAug lydianAug_I = new I_LydianAug(keyNote);
+                        LydianAug lydianAug = new LydianAug(lydianAug_I.newRoot4I);
                         System.out.println("Ma7#5 Lydian augmented scale for MA7 on I");
                         System.out.println(" W W W W H W H ");
                         System.out.println(lydianAug.newScale);
                         //define the melodic minor scale used for I
-                        System.out.println("Melodic minor scale on " + keyNote);
+                        System.out.println("Melodic minor scale on " + lydianAug_I.newRoot4MMScale);
                         break;
                     case 2:
                         II_Dorianb2 dorb2_II = new II_Dorianb2(keyNote);
@@ -42,7 +42,7 @@ public class MainActivity {
                         //define the melodic minor scale used for I
                         System.out.println("Melodic minor scale on " + dorb2_II.newRoot4MMScale);
                         break;
-                    case 3:                           
+                    case 3:
                         V_LydianDom lydianDom_V = new V_LydianDom(keyNote);
                         //define the key note for V
                         LydianDom lydianDom = new LydianDom(lydianDom_V.newRoot4V);
